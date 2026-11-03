@@ -1,0 +1,6 @@
+{
+  "name": "MMR MOTORS LTD",
+  "description": "Vehicle maintenance, repair services, and used car sales from MMR MOTORS LTD in Croydon, UK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
