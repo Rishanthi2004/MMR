@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Wrench, PhoneCall, Car, ShieldAlert } from 'lucide-react';
-import { OrangeParticleNode } from './FloatingComponents';
 
 export const WhyChooseUsSection: React.FC = () => {
   const pillars = [
@@ -43,9 +42,6 @@ export const WhyChooseUsSection: React.FC = () => {
     <section className="relative py-24 lg:py-32 bg-white overflow-hidden border-t border-neutral-200/60">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-to-tr from-orange-100/30 via-neutral-100/40 to-transparent blur-3xl pointer-events-none rounded-full" />
-      <div className="absolute top-16 left-20 pointer-events-none">
-        <OrangeParticleNode size={14} delay={0.3} />
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

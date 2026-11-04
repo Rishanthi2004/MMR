@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, MapPin, Wrench, Shield, Car, Sparkles } from 'lucide-react';
-import { OrangeParticleNode } from './FloatingComponents';
 
 interface AboutSectionProps {
   workshopImgSrc: string;
@@ -21,9 +20,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
     >
       {/* Decorative ambient background */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl pointer-events-none -translate-y-1/2 -translate-x-1/3" />
-      <div className="absolute top-12 right-12 pointer-events-none">
-        <OrangeParticleNode size={12} delay={1.5} />
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

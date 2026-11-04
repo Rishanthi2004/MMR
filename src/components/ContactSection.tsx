@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, ExternalLink, Send, CheckCircle2, Clock } from 'lucide-react';
-import { BrakeDisc3D, OrangeParticleNode } from './FloatingComponents';
 
 interface ContactSectionProps {
   workshopImg: string;
@@ -41,14 +40,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ workshopImg }) =
 
       {/* Ambient Orange Accents */}
       <div className="absolute top-1/4 -right-20 w-96 h-96 bg-orange-600/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 pointer-events-none">
-        <OrangeParticleNode size={16} delay={0.6} />
-      </div>
-
-      {/* Floating 3D Component */}
-      <div className="absolute top-12 right-12 w-28 opacity-40 pointer-events-none hidden lg:block">
-        <BrakeDisc3D duration={9} delay={0.3} rotate={15} />
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

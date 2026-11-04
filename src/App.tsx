@@ -9,8 +9,6 @@ import { WhyChooseUsSection } from './components/WhyChooseUsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
-// Generated High-Fidelity Realistic Automotive Assets
-import heroCarImg from './assets/images/hero_car_studio_1793689339443.jpg';
 import workshopBayImg from './assets/images/workshop_clean_bay_1793689340496.jpg';
 import serviceMaintenanceImg from './assets/images/service_maintenance_1793689340307.jpg';
 import serviceRepairImg from './assets/images/service_brake_repair_1793689341288.jpg';
@@ -56,8 +54,8 @@ export default function App() {
       <Navbar activeSection={activeSection} />
 
       <main className="flex-1">
-        {/* Section 2: Hero with Cinematic 3D Vehicle Entrance */}
-        <HeroSection heroCarSrc={heroCarImg} />
+        {/* Section 2: Hero with 3D Automotive Experience */}
+        <HeroSection />
 
         {/* Section 4: About Us — Interactive 3D Section */}
         <AboutSection

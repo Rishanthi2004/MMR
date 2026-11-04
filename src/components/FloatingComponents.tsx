@@ -331,29 +331,13 @@ export const EngineGear3D: React.FC<FloatingElementProps> = ({
   );
 };
 
-// Subtle 3D Orange Ambient Energy Node
+// Subtle 3D Orange Ambient Energy Node (Disabled per user request)
 export const OrangeParticleNode: React.FC<{
   className?: string;
   size?: number;
   delay?: number;
-}> = ({ className = '', size = 16, delay = 0 }) => {
-  return (
-    <motion.div
-      animate={{
-        y: [-10, 10, -10],
-        scale: [1, 1.25, 1],
-        opacity: [0.6, 1, 0.6],
-      }}
-      transition={{
-        duration: 4.5,
-        repeat: Infinity,
-        ease: 'easeInOut',
-        delay,
-      }}
-      style={{ width: size, height: size }}
-      className={`rounded-full bg-radial from-orange-400 via-orange-500 to-transparent blur-[1px] shadow-[0_0_15px_rgba(249,115,22,0.8)] pointer-events-none select-none ${className}`}
-    />
-  );
+}> = () => {
+  return null;
 };
 
 // Realistic 3D Chrome Mechanic Wrench

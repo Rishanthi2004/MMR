@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Sparkles, Phone, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { BrakeDisc3D, EngineGear3D, OrangeParticleNode } from './FloatingComponents';
 
 interface ShowcaseSectionProps {
   showcaseImg: string;
@@ -26,17 +25,6 @@ export const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({ showcaseImg, o
       ref={containerRef}
       className="relative py-24 lg:py-36 bg-gradient-to-b from-white via-neutral-100/50 to-white overflow-hidden border-t border-neutral-200/60"
     >
-      {/* Floating 3D Components */}
-      <div className="absolute top-20 left-12 w-28 opacity-70 pointer-events-none hidden md:block">
-        <BrakeDisc3D duration={8} delay={0.4} rotate={-10} />
-      </div>
-      <div className="absolute bottom-20 right-12 w-24 opacity-60 pointer-events-none hidden md:block">
-        <EngineGear3D duration={11} delay={0.8} rotate={20} />
-      </div>
-      <div className="absolute top-1/4 right-1/4 pointer-events-none">
-        <OrangeParticleNode size={14} delay={0.7} />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">

@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { Wrench, ShieldAlert, Car, ArrowRight, Check } from 'lucide-react';
-import { BrakeDisc3D, EngineGear3D } from './FloatingComponents';
 
 interface ServiceItem {
   id: string;
@@ -207,11 +206,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       id="services"
       className="relative py-24 lg:py-32 bg-neutral-50/70 border-t border-neutral-200/60 overflow-hidden"
     >
-      {/* Subtle floating 3D gear element */}
-      <div className="absolute top-16 right-8 w-24 opacity-40 pointer-events-none hidden lg:block">
-        <EngineGear3D duration={14} rotate={45} />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
